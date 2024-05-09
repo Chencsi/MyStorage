@@ -18,3 +18,5 @@ app.listen(PORT, () => {
 }).on("error", (error) => {
     throw new Error(error.message);
 });
+
+// Credit: https://medium.com/@gfujii-cmd/getting-started-with-express-typescript-with-mysql-api-b31c5a648aac
