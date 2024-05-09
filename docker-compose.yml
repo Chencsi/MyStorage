@@ -4,6 +4,8 @@ services:
 
   mysqldb:
     image: mysql:5.7
+    platform: linux/amd64 # configuration for M1 macs
+    container_name: mysql_db
     restart: unless-stopped
     env_file: ./.env
     environment:
