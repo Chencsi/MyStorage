@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import itemController from '../controller/item.controller';
+import { findItemById, getAll } from '../repository/ItemRepository';
 
-const productRouter = Router();
+const itemRouter = Router();
 
-productRouter.get('/', itemController.getAll);
+itemRouter.get('/', getAll);
 
-export default productRouter;
+export default itemRouter;
