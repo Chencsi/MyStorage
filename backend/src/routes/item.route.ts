@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { findItemById, getAll } from '../repository/ItemRepository';
+import { findItemById, getAll } from '../controllers/item.controller';
 
 const itemRouter = Router();
 
